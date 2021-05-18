@@ -1,0 +1,83 @@
+.header {
+  padding: 50px 0;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+      display: flex;
+
+      &-item + .menu__list-item {
+        padding-left: 30px;
+      }
+    }
+
+    &__list-link {
+      font-size: 15px;
+
+      @extend %rubik-500;
+    }
+  }
+
+  .user-panel {
+    display: flex;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__link--search {
+      margin-right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #edf1f4;
+    }
+
+    &__link--heart {
+      margin-right: 1px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    &__link--basket {
+      margin-right: 20px;
+      border-radius: 0 50px 50px 0;
+    }
+
+    &__link-menu {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #a3bbc8;
+    }
+
+    &__link--heart,
+    &__link--basket {
+      position: relative;
+      width: 90px;
+      height: 50px;
+      background-color: #fcd7b6;
+
+      span {
+        position: absolute;
+        left: 48px;
+        top: 12px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      img {
+        transform: translateY(3px);
+      }
+    }
+  }
+}
