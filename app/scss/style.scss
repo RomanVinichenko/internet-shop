@@ -1,10 +1,11 @@
 @import "base/variables";
 @import "libs/reset";
 
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 
 @import "fonts";
 @import "global";
 @import "blocks/_header.scss";
 @import "blocks/_footer.scss";
+@import "blocks/_intro.scss";
 @import "media";

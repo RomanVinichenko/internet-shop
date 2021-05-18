@@ -1,10 +1,21 @@
-body{
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   color: $default;
-  font-style: normal;
 
-  @extend %rubik-400;
+  @extend %rubik-500;
 }
 
 .container {
@@ -16,5 +27,15 @@ body{
 .container__small {
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
   max-width: 1200px;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  color: #fff;
+  background-color: #a3bbc8;
+  transition: all 0.3s;
+  cursor: pointer;
 }
