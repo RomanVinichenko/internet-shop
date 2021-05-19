@@ -70,7 +70,6 @@
       padding: 12px;
       width: 96px;
       line-height: 22px;
-fz
 
       &:hover {
         background-color: #234969;
@@ -101,11 +100,11 @@ fz
         margin-right: 28px;
       }
 
-      & + .footer-bottom__link::before {
-        content: "|";
-        position: absolute;
-        left: -18px;
-      }
+    }
+    &__link + .footer-bottom__link::before {
+      content: "|";
+      position: absolute;
+      left: -18px;
     }
   }
 }
