@@ -99,8 +99,8 @@
       &:not(:last-child) {
         margin-right: 28px;
       }
-
     }
+
     &__link + .footer-bottom__link::before {
       content: "|";
       position: absolute;

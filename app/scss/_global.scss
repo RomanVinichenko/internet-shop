@@ -12,8 +12,9 @@ body {
   flex-direction: column;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1;
   color: $default;
+  background-color: #fff;
 
   @extend %rubik-500;
 }
@@ -38,4 +39,14 @@ body {
   background-color: #a3bbc8;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: $title;
+
+  @extend %dmsans-700;
 }
