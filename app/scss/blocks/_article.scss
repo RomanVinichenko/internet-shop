@@ -1,0 +1,16 @@
+.article {
+padding: 100px 0 80px;
+
+&__title-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+&__title {
+  margin: 0 0 0 30px;
+}
+
+
+}
