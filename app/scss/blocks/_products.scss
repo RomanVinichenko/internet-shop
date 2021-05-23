@@ -171,13 +171,9 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 12px;
-    transition: all .3s;
-    cursor: pointer;
     color: #436372;
-
-    &:hover {
-      background-color: #fff;
-    }
+    transition: all 0.3s;
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -186,6 +182,10 @@
       width: 22px;
       height: 9px;
       background-image: url("../images/icons/arrow-right-dark.svg");
+    }
+
+    &:hover {
+      background-color: #fff;
     }
 
     @extend %rubik-500;
