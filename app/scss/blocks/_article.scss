@@ -118,10 +118,9 @@
   padding: 270px 0 90px;
   background-color: #fef7f0;
 
-  .partners-items {
+  .slick-track {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 90px;
+  align-items: center;
+  justify-content: space-between;
   }
 }
