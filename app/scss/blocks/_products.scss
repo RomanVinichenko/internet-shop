@@ -56,6 +56,9 @@
   }
 
   &__card-title {
+    @include text-clamp;
+   -webkit-line-clamp: 2;
+
     margin-bottom: 15px;
     font-size: 16px;
     color: $accent;
@@ -90,7 +93,8 @@
     }
   }
 
-  &__card-link {
+  &__card-link,
+  &__card-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +106,7 @@
     box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
     background-color: #fff;
     transition: all 0.3s;
+    cursor: pointer;
 
     svg {
       width: 20px;

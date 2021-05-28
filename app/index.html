@@ -14,11 +14,11 @@
       <div class="header__wrapper">
         <nav class="menu">
           <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+            <img class="logo__img" width="146" height="39" src="images/logo.png" alt="logo">
           </a>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
+              <a class="menu__list-link menu__list-link--active" href="#">Home +</a>
             </li>
             <li class="menu__list-item">
               <a class="menu__list-link" href="#">About</a>
@@ -38,18 +38,26 @@
           </ul>
           <div class="user-panel">
             <a class="user-panel__link user-panel__link--search" href="#">
-              <img class="user-panel__link-img" src="images/icons/search.svg" alt="Search-icon">
+              <svg class="user-panel__link-img">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
             </a>
             <a class="user-panel__link user-panel__link--heart" href="#">
-              <img class="user-panel__link-img" src="images/icons/heart.svg" alt="Favorites_icon">
+              <svg class="user-panel__link-img">
+                <use xlink:href="images/sprite.svg#heart"></use>
+              </svg>
               <span>0</span>
             </a>
             <a class="user-panel__link user-panel__link--basket" href="#">
-              <img class="user-panel__link-img" src="images/icons/basket.svg" alt="Cart-icon">
+              <svg class="user-panel__link-img">
+                <use xlink:href="images/sprite.svg#basket"></use>
+              </svg>
               <span>0</span>
             </a>
-            <a class="user-panel__link user-panel__link-menu" href="#">
-              <img class="user-panel__link-img" src="images/icons/menu.svg" alt="Menu-icon">
+            <a class="user-panel__link user-panel__link--menu" href="#">
+              <svg class="user-panel__link-img">
+                <use xlink:href="images/sprite.svg#menu"></use>
+              </svg>
             </a>
           </div>
         </nav>
@@ -195,238 +203,256 @@
           </li>
         </ul>
         <ul class="products__cards">
-          <li class="products__card mix furnitures">
-            <img class="products__card-img" src="../images/content/product-1.png" alt="photo of furniture">
-            <h4 class="products__card-title">Wooden radio</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+
+          <li class="mix furnitures">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-1.png" alt="photo of furniture">
+              <h4 class="products__card-title">Wooden radio</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#basket"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix furnitures">
-            <img class="products__card-img" src="../images/content/product-2.png" alt="photo of furniture">
-            <h4 class="products__card-title">Wooden chair</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix furnitures">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-2.png" alt="photo of furniture">
+              <h4 class="products__card-title">Wooden chair</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#basket"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix chairs">
-            <img class="products__card-img" src="../images/content/product-3.png" alt="photo of furniture">
-            <h4 class="products__card-title">White chair</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class=" mix chairs">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-3.png" alt="photo of furniture">
+              <h4 class="products__card-title">White chair</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#basket"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix chairs">
-            <img class="products__card-img" src="../images/content/product-4.png" alt="photo of furniture">
-            <h4 class="products__card-title">Retro table</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix chairs">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-4.png" alt="photo of furniture">
+              <h4 class="products__card-title">Retro table</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#basket"></use>
+                   </svg>
+                 </button>
+               </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#heart"></use>
+                   </svg>
+                 </button>
+               </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix lighting">
-            <img class="products__card-img" src="../images/content/product-5.png" alt="photo of furniture">
-            <h4 class="products__card-title">Wooden radio</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix lighting">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-5.png" alt="photo of furniture">
+              <h4 class="products__card-title">Wooden radio</h4>
+             <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#basket"></use>
+                   </svg>
+                 </button>
+               </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#heart"></use>
+                   </svg>
+                 </button>
+               </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix lighting">
-            <img class="products__card-img" src="../images/content/product-6.png" alt="photo of furniture">
-            <h4 class="products__card-title">Wooden chair</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix lighting">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-6.png" alt="photo of furniture">
+              <h4 class="products__card-title">Wooden chair</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#basket"></use>
+                   </svg>
+                 </button>
+               </li>
+               <li class="products__card-item">
+                 <button class="products__card-btn" type="button">
+                   <svg class="products__card-pic">
+                     <use xlink:href="images/sprite.svg#heart"></use>
+                   </svg>
+                 </button>
+               </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix decor">
-            <img class="products__card-img" src="../images/content/product-7.png" alt="photo of furniture">
-            <h4 class="products__card-title">White chair</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix decor">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-7.png" alt="photo of furniture">
+              <h4 class="products__card-title">White chair</h4>
+             <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#basket"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </article>
           </li>
 
-          <li class="products__card mix decor">
-            <img class="products__card-img" src="../images/content/product-8.png" alt="photo of furniture">
-            <h4 class="products__card-title">Retro table</h4>
-            <p class="products__card-price">$29.00</p>
-            <ul class="products__card-nav">
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#basket"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="products__card-item">
-                <a class="products__card-link" href="#">
-                  <svg class="products__card-pic">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <li class="mix decor">
+            <article class="products__card">
+              <img class="products__card-img" src="../images/content/product-8.png" alt="photo of furniture">
+              <h4 class="products__card-title">Retro table</h4>
+              <span class="products__card-price"><span>$</span>29.00</span>
+              <ul class="products__card-nav">
+                <li class="products__card-item">
+                  <a class="products__card-link" href="#">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#basket"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="products__card-item">
+                  <button class="products__card-btn" type="button">
+                    <svg class="products__card-pic">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </article>
           </li>
         </ul>
+
       </div>
 
       <div class="decor">

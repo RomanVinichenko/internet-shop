@@ -4,7 +4,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 820px;
     background-color: #fcd7b6;
 
     &-inner {
@@ -25,6 +25,8 @@
       line-height: 70px;
       text-transform: uppercase;
       color: #243f4d;
+      @include text-clamp;
+   -webkit-line-clamp: 3;
     }
 
     &-subtitle {
@@ -34,6 +36,8 @@
       font-size: 18px;
       line-height: 30px;
       color: #436372;
+      @include text-clamp;
+   -webkit-line-clamp: 3;
     }
 
     &-btn {
