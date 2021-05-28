@@ -57,11 +57,11 @@
 
   &__card-title {
     @include text-clamp;
-   -webkit-line-clamp: 2;
 
     margin-bottom: 15px;
     font-size: 16px;
     color: $accent;
+    -webkit-line-clamp: 2;
 
     @extend %dmsans-700;
   }
@@ -124,6 +124,10 @@
   }
 }
 
+.mixitup-control-active {
+  color: #191919;
+}
+
 .decor {
   &__inner {
     display: flex;
@@ -151,6 +155,7 @@
   }
 
   &__content-title {
+    @include text-clamp;
     margin-bottom: 25px;
     font-size: 26px;
     color: $accent;
@@ -159,6 +164,8 @@
   }
 
   &__content-text {
+    @include text-clamp;
+    -webkit-line-clamp: 3;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.8;

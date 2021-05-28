@@ -1,7 +1,16 @@
 .footer {
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
   .footer-top {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
     border-bottom: 1px solid #dae4e9;
 
     &__logo {
@@ -10,14 +19,12 @@
     }
 
     &__item {
-      margin-bottom: 70px;
-      width: 280px;
+      width: 100%;
+      max-width: 270px;
     }
 
-    &__item-first {
-      margin-right: 30px;
-      width: 100%;
-      max-width: 240px;
+    &__item-inner {
+      width: 240px;
 
       span {
         text-transform: uppercase;
@@ -43,12 +50,13 @@
       margin-top: 15px;
     }
 
-    &__item-form {
-      width: 270px;
-    }
-
     &__item-text {
       margin-bottom: 36px;
+      line-height: 1.5;
+    }
+
+    &__form {
+      display: flex;
     }
 
     &__form-input {
@@ -67,8 +75,7 @@
     }
 
     &__form-btn {
-      padding: 12px;
-      width: 96px;
+      width: 100px;
       line-height: 22px;
 
       &:hover {

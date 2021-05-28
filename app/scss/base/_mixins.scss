@@ -1,9 +1,9 @@
-@mixin text-clamp($lines: 2, $line-height: false) {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: $lines;
-    @if $line-height {
-        max-height: $line-height * $lines * 1px;
-    }
+@mixin text-clamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
+
+ /*@include text-clamp;
+ -webkit-line-clamp: ;*/
