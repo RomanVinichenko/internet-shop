@@ -18,6 +18,4 @@ $(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
     });
-
-    var mixer = mixitup('.products');
 });

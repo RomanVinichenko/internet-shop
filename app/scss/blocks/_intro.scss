@@ -48,6 +48,10 @@
       line-height: 12px;
       text-align-last: left;
 
+      &:hover {
+  `1
+      }
+
       &::after {
         content: "";
         position: absolute;

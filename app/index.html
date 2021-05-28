@@ -180,26 +180,26 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" data-ref="products">
       <div class="container__small">
         <h3 class="title">
           Products of the week
         </h3>
         <ul class="products__menu-items">
           <li class="products__menu-item">
-            <button class="products__menu-btn" type="button" data-filter="all">All</button>
+            <button class=" products__menu-btn" type="button" data-filter="all">All</button>
           </li>
           <li class="products__menu-item">
-            <button class="products__menu-btn" type="button" data-filter=".furnitures">Furnitures</button>
+            <button class=" products__menu-btn " type="button" data-filter=".furnitures">Furnitures</button>
           </li>
           <li class="products__menu-item">
-            <button class="products__menu-btn" type="button" data-filter=".chairs">Chairs</button>
+            <button class=" products__menu-btn " type="button" data-filter=".chairs">Chairs</button>
           </li>
           <li class="products__menu-item">
-            <button class="products__menu-btn" type="button" data-filter=".lighting">Lighting</button>
+            <button class=" products__menu-btn" type="button" data-filter=".lighting">Lighting</button>
           </li>
           <li class="products__menu-item">
-            <button class="products__menu-btn" type="button" data-filter=".decor">Decor</button>
+            <button class=" products__menu-btn " type="button" data-filter=".decor">Decor</button>
           </li>
         </ul>
         <ul class="products__cards">
@@ -266,7 +266,7 @@
             </article>
           </li>
 
-          <li class=" mix chairs">
+          <li class="mix chairs">
             <article class="products__card">
               <img class="products__card-img" src="../images/content/product-3.png" alt="photo of furniture">
               <h4 class="products__card-title">White chair</h4>
@@ -452,7 +452,6 @@
             </article>
           </li>
         </ul>
-
       </div>
 
       <div class="decor">
@@ -490,7 +489,7 @@
       </div>
     </section>
 
-    <section class="design">
+    <section class="design" data-ref="design">
       <div class="container__small">
         <h3 class="title">New Design</h3>
         <ul class="design__menu-items">
@@ -520,6 +519,7 @@
               <img class="design__card-pic" src="../images/content/design-1.png" alt="photo of furniture">
             </div>
           </li>
+
           <li class="design__card mix furnitures">
             <h4 class="design__card-title">Lampe Sur Pieds
               Bamboo</h4>
@@ -528,6 +528,7 @@
               <img class="design__card-pic" src="../images/content/design-2.png" alt="photo of furniture">
             </div>
           </li>
+
           <li class="design__card mix chairs">
             <h4 class="design__card-title">Rattan Rocking
               Chair</h4>
@@ -536,6 +537,7 @@
               <img class="design__card-pic" src="../images/content/design-3.png" alt="photo of furniture">
             </div>
           </li>
+
           <li class="design__card mix lighting">
             <h4 class="design__card-title">Rattan Rocking
               Chair</h4>
@@ -544,6 +546,7 @@
               <img class="design__card-pic" src="../images/content/design-4.png" alt="photo of furniture">
             </div>
           </li>
+
           <li class="design__card mix decor">
             <h4 class="design__card-title">Rattan Rocking
               Chair</h4>
@@ -552,6 +555,7 @@
               <img class="design__card-pic" src="../images/content/design-5.png" alt="photo of furniture">
             </div>
           </li>
+
           <li class="design__card mix furnitures">
             <h4 class="design__card-title">Lampe Sur Pieds
               Bamboo</h4>
@@ -566,7 +570,7 @@
       <div class="design-video">
         <span class="sr-only">Press to play video</span>
         <a class="design-video__link" data-fancybox href="https://www.youtube.com/watch?v=EUhIIbiFrCs"
-          style="background-image: url('../images/video-bg.jpg');">
+          style="background-image: url('../images/video-bg.jpg')">
           <svg class="design-video__pic">
             <use xlink:href="images/sprite.svg#play-video"></use>
           </svg>
@@ -751,6 +755,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>
+    var containerEl1 = document.querySelector('[data-ref="products"]');
+    var containerEl2 = document.querySelector('[data-ref="design"]');
+
+    var config = {
+      controls: {
+        scope: 'local'
+      }
+    };
+
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer1 = mixitup(containerEl2, config);
+  </script>
   <script src='js/index.min.js'></script>
 </body>
 
