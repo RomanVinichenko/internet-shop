@@ -66,6 +66,7 @@
 
   &__card-title {
     @include text-clamp;
+
     margin-bottom: 15px;
     width: 100%;
     max-width: 200px;

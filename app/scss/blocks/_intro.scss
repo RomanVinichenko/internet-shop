@@ -157,6 +157,7 @@
 
     &__info-text {
       @include text-clamp;
+
       width: 100%;
       max-width: 220px;
       font-size: 16px;
